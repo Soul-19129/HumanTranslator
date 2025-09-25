@@ -3,13 +3,20 @@
 ![HumanTranslator Banner](https://via.placeholder.com/800x200/007acc/ffffff?text=🌍+HumanTranslator+🗣️)
 
 <div align="center">
-  <p>🚀 <strong>مشروع مفتوح المصدر للترجمة الفورية متعددة اللغات</strong> | <strong>Open-source real-time multilingual translation project</strong> 🚀</p>
-  <p>💝 <strong>موجه لمساعدة المجتمعات</strong> | <strong>Designed to help communities</strong> 💝</p>
   
-  ![GitHub Stars](https://img.shields.io/github/stars/Soul-19129/HumanTranslator?style=for-the-badge)
-  ![GitHub Forks](https://img.shields.io/github/forks/Soul-19129/HumanTranslator?style=for-the-badge)
-  ![License](https://img.shields.io/github/license/Soul-19129/HumanTranslator?style=for-the-badge)
-  ![Contributors](https://img.shields.io/github/contributors/Soul-19129/HumanTranslator?style=for-the-badge)
+🚀 **مشروع مفتوح المصدر للترجمة الفورية متعددة اللغات** | **Open-source real-time multilingual translation project** 🚀
+
+💝 **موجه لمساعدة المجتمعات** | **Designed to help communities** 💝
+  
+  
+![GitHub Stars](https://img.shields.io/github/stars/Soul-19129/HumanTranslator?style=for-the-badge)
+  
+![GitHub Forks](https://img.shields.io/github/forks/Soul-19129/HumanTranslator?style=for-the-badge)
+  
+![License](https://img.shields.io/github/license/Soul-19129/HumanTranslator?style=for-the-badge)
+  
+![Contributors](https://img.shields.io/github/contributors/Soul-19129/HumanTranslator?style=for-the-badge)
+
 </div>
 
 ---
@@ -89,60 +96,54 @@ python app.py
 ```
 
 ### 🌐 الاستخدام عبر الويب | Web Usage
-
-1. 🌍 **افتح المتصفح** | Open browser
-2. 📝 **أدخل النص المراد ترجمته** | Enter text to translate
-3. 🔄 **اختر اللغات** | Select languages
-4. ✅ **احصل على الترجمة** | Get translation
+1. 🌍 افتح المتصفح | Open browser
+2. 📝 أدخل النص المراد ترجمته | Enter text to translate
+3. 🔄 اختر اللغات | Select languages
+4. ✅ احصل على الترجمة | Get translation
 
 ### 🎤 الاستخدام الصوتي | Voice Usage
-
-1. 🎙️ **اضغط على زر التسجيل** | Press record button
-2. 🗣️ **تحدث بوضوح** | Speak clearly
-3. 🔄 **اختر لغة الترجمة** | Choose translation language
-4. 🔊 **استمع للترجمة** | Listen to translation
+1. 🎙️ اضغط على زر التسجيل | Press record button
+2. 🗣️ تحدث بوضوح | Speak clearly
+3. 🔄 اختر لغة الترجمة | Choose translation language
+4. 🔊 استمع للترجمة | Listen to translation
 
 ---
 
 ## 🤝 كيفية المساهمة | How to Contribute
 
-**نرحب بمساهمتك!** | **We welcome your contribution!**
+نرحب بمساهمتك! | We welcome your contribution!
 
 ### 🔧 للمطورين | For Developers
-
-1. 🍴 **Fork المستودع** | Fork the repository
-2. 🌿 **إنشاء فرع جديد** | Create a new branch
+1. 🍴 Fork المستودع | Fork the repository
+2. 🌿 إنشاء فرع جديد | Create a new branch
    ```bash
    git checkout -b feature/amazing-feature
    ```
-3. 💻 **إضافة التحسينات** | Add your improvements
-4. 📝 **Commit التغييرات** | Commit your changes
+3. 💻 إضافة التحسينات | Add your improvements
+4. 📝 Commit التغييرات | Commit your changes
    ```bash
    git commit -m 'Add some amazing feature'
    ```
-5. 📤 **Push للفرع** | Push to branch
+5. 📤 Push للفرع | Push to branch
    ```bash
    git push origin feature/amazing-feature
    ```
-6. 🔄 **إنشاء Pull Request** | Create Pull Request
+6. 🔄 إنشاء Pull Request | Create Pull Request
 
 ### 🌍 للمترجمين | For Translators
-
-- 📚 **إضافة لغات جديدة** | Add new languages
-- 🔍 **تحسين الترجمات الموجودة** | Improve existing translations
-- 📖 **ترجمة الوثائق** | Translate documentation
+- 📚 إضافة لغات جديدة | Add new languages
+- 🔍 تحسين الترجمات الموجودة | Improve existing translations
+- 📖 ترجمة الوثائق | Translate documentation
 
 ### 🎨 للمصممين | For Designers
-
-- 🖌️ **تحسين واجهة المستخدم** | Improve user interface
-- 🎭 **تصميم أيقونات جديدة** | Design new icons
-- 📱 **تطوير التصميم المتجاوب** | Develop responsive design
+- 🖌️ تحسين واجهة المستخدم | Improve user interface
+- 🎭 تصميم أيقونات جديدة | Design new icons
+- 📱 تطوير التصميم المتجاوب | Develop responsive design
 
 ### 🔍 للمختبرين | For Testers
-
-- 🐛 **الإبلاغ عن الأخطاء** | Report bugs
-- ✅ **اختبار الميزات الجديدة** | Test new features
-- 💡 **اقتراح تحسينات** | Suggest improvements
+- 🐛 الإبلاغ عن الأخطاء | Report bugs
+- ✅ اختبار الميزات الجديدة | Test new features
+- 💡 اقتراح تحسينات | Suggest improvements
 
 ---
 
@@ -172,26 +173,26 @@ python app.py
 ## 📞 التواصل والدعم | Contact & Support
 
 ### 💬 المجتمع | Community
-
 - 💬 **مناقشات GitHub** | [GitHub Discussions](https://github.com/Soul-19129/HumanTranslator/discussions)
 - 🐛 **الإبلاغ عن الأخطاء** | [Report Issues](https://github.com/Soul-19129/HumanTranslator/issues)
 - 📧 **البريد الإلكتروني** | Email: [your-email@gmail.com](mailto:your-email@gmail.com)
 - 💼 **LinkedIn** | [tommy-dev](https://linkedin.com/in/tommy-dev)
 
 ### 🤝 الدعم | Support
-
 - ❓ **الأسئلة الشائعة** | [FAQ](https://github.com/Soul-19129/HumanTranslator/wiki/FAQ)
 - 📚 **الوثائق** | [Documentation](https://github.com/Soul-19129/HumanTranslator/wiki)
 - 🎥 **فيديوهات تعليمية** | [Tutorials](https://github.com/Soul-19129/HumanTranslator/wiki/Tutorials)
 
 ### 🌐 وسائل التواصل | Social Media
-
 - 🐦 **Twitter** | [@tommy_dev_19](https://twitter.com/tommy_dev_19)
 - 💻 **GitHub** | [@Soul-19129](https://github.com/Soul-19129)
 
 ---
 
 ## 🏆 المساهمون | Contributors
+
+- 👤 [Soul-19129](https://github.com/Soul-19129) - المطور الرئيسي | Lead Developer
+- 👤 [Abu-al-Hun](https://github.com/Abu-al-Hun) - مساهم | Contributor
 
 <div align="center">
   <a href="https://github.com/Soul-19129/HumanTranslator/graphs/contributors">
@@ -212,7 +213,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 🌟 ادعمنا | Support Us
 
 إذا كان هذا المشروع مفيداً لك، لا تتردد في:
-
 If this project is helpful to you, feel free to:
 
 - ⭐ **إضافة نجمة للمشروع** | Star the project
@@ -223,7 +223,11 @@ If this project is helpful to you, feel free to:
 ---
 
 <div align="center">
-  <p><strong>🌍 معاً نكسر حاجز اللغة | Together we break the language barrier 🌍</strong></p>
-  <p>صنع بـ ❤️ من قبل <a href="https://github.com/Soul-19129">Soul-19129</a></p>
-  <p>Made with ❤️ by <a href="https://github.com/Soul-19129">Soul-19129</a></p>
+  
+**🌍 معاً نكسر حاجز اللغة | Together we break the language barrier 🌍**
+
+صنع بـ ❤️ من قبل [Soul-19129](https://github.com/Soul-19129)
+
+Made with ❤️ by [Soul-19129](https://github.com/Soul-19129)
+
 </div>
