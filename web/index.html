@@ -1,16 +1,73 @@
-<!-- Main page HTML -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HumanTranslator</title>
-    <!-- Add CSS and JS links here -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HumanTranslator</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <h1>HumanTranslator</h1>
-    <p>Welcome to the HumanTranslator web interface</p>
-    <!-- Add main application interface here -->
+  <div class="container">
+    <div class="header">
+      <div class="brand">🌍 HumanTranslator</div>
+      <div class="badge" id="health">Checking server…</div>
+    </div>
+
+    <div class="panel">
+      <div class="row">
+        <div class="col">
+          <label for="sourceText">Source Text</label>
+          <textarea id="sourceText" placeholder="Type or paste text…"></textarea>
+        </div>
+        <div class="col">
+          <label for="translatedText">Translated</label>
+          <textarea id="translatedText" readonly placeholder="Translation will appear here…"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="sourceLang">From</label>
+          <select id="sourceLang">
+            <option value="auto" selected>Auto Detect</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="targetLang">To</label>
+          <select id="targetLang"></select>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="btnTranslate">Translate</button>
+        <button class="btn secondary" id="btnSwap">Swap</button>
+        <button class="btn secondary" id="btnClear">Clear</button>
+      </div>
+      <div class="notice" id="langInfo"></div>
+    </div>
+
+    <div class="panel" style="margin-top:14px">
+      <div class="row">
+        <div class="col">
+          <label>Speech to Text</label>
+          <input type="file" id="audioInput" accept="audio/*" />
+          <div class="actions">
+            <button class="btn" id="btnSTT">Transcribe</button>
+          </div>
+        </div>
+        <div class="col">
+          <label>Text to Speech</label>
+          <input type="text" id="ttsText" placeholder="Enter text to speak" />
+          <div class="actions">
+            <button class="btn" id="btnTTS">Speak</button>
+            <audio id="ttsAudio" class="audio-controls" controls style="display:none"></audio>
+          </div>
+        </div>
+      </div>
+      <div id="alerts"></div>
+    </div>
+
+    <div class="footer">MIT © HumanTranslator</div>
+  </div>
+
+  <script src="/script.js"></script>
 </body>
 </html>
