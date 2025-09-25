@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HumanTranslator</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div class="container">
@@ -12,7 +12,10 @@
       <div class="brand">🌍 HumanTranslator</div>
       <div class="badge" id="health">Checking server…</div>
     </div>
-
+    
+    <!-- Status Bar -->
+    <div id="statusBar" class="status-bar" style="display:none;"></div>
+    
     <div class="panel">
       <div class="row">
         <div class="col">
@@ -21,7 +24,13 @@
         </div>
         <div class="col">
           <label for="translatedText">Translated</label>
-          <textarea id="translatedText" readonly placeholder="Translation will appear here…"></textarea>
+          <div class="textarea-container">
+            <textarea id="translatedText" readonly placeholder="Translation will appear here…"></textarea>
+            <div class="textarea-buttons">
+              <button class="btn icon-btn" id="btnCopyTranslation" title="Copy Translation">📋</button>
+              <button class="btn icon-btn" id="btnDownloadTranslation" title="Download Translation">💾</button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -43,19 +52,19 @@
       </div>
       <div class="notice" id="langInfo"></div>
     </div>
-
+    
     <div class="panel" style="margin-top:14px">
       <div class="row">
         <div class="col">
-          <label>Speech to Text</label>
-          <input type="file" id="audioInput" accept="audio/*" />
+          <strong>Speech to Text</strong>
+          <input type="file" id="audioInput" accept="audio/*">
           <div class="actions">
             <button class="btn" id="btnSTT">Transcribe</button>
           </div>
         </div>
         <div class="col">
-          <label>Text to Speech</label>
-          <input type="text" id="ttsText" placeholder="Enter text to speak" />
+          <strong>Text to Speech</strong>
+          <input type="text" id="ttsText" placeholder="Enter text to speak">
           <div class="actions">
             <button class="btn" id="btnTTS">Speak</button>
             <audio id="ttsAudio" class="audio-controls" controls style="display:none"></audio>
@@ -64,10 +73,9 @@
       </div>
       <div id="alerts"></div>
     </div>
-
+    
     <div class="footer">MIT © HumanTranslator</div>
   </div>
-
   <script src="/script.js"></script>
 </body>
 </html>
