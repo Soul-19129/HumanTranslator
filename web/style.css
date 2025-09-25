@@ -1,20 +1,100 @@
 /* HumanTranslator Web UI Styles */
 :root{
   --bg:#0f172a; --panel:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#22c55e; --danger:#ef4444;
+  --success:#10b981; --info:#3b82f6; --warning:#f59e0b;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--bg);color:var(--text)}
 .container{max-width:980px;margin:0 auto;padding:24px}
 .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
 .brand{font-weight:700;font-size:22px}
+
+/* Status Bar Styles */
+.status-bar{
+  background:var(--panel);
+  border:1px solid #1f2937;
+  border-radius:8px;
+  padding:12px 16px;
+  margin-bottom:16px;
+  font-size:14px;
+  font-weight:500;
+  text-align:center;
+  transition:all 0.3s ease;
+  animation:fadeInDown 0.3s ease;
+}
+.status-bar.info{background:#1e3a8a;border-color:#3b82f6;color:#dbeafe}
+.status-bar.success{background:#14532d;border-color:#22c55e;color:#dcfce7}
+.status-bar.error{background:#7c2d12;border-color:#ef4444;color:#fecaca}
+
+@keyframes fadeInDown{
+  from{opacity:0;transform:translateY(-10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
 .panel{background:var(--panel);border:1px solid #1f2937;border-radius:12px;padding:16px}
 .row{display:flex;gap:12px;flex-wrap:wrap}
 .col{flex:1 1 320px;min-width:280px}
 label{display:block;margin:6px 0;color:var(--muted);font-size:14px}
-select, input[type="text"], textarea{width:100%;background:#0b1220;color:var(--text);border:1px solid #1f2937;border-radius:10px;padding:10px 12px;outline:none}
+
+/* Enhanced Textarea Container */
+.textarea-container{
+  position:relative;
+  width:100%;
+}
+.textarea-container textarea{
+  width:100%;
+  padding-right:80px; /* Make space for buttons */
+  user-select:text !important;
+  -webkit-user-select:text !important;
+  -moz-user-select:text !important;
+  -ms-user-select:text !important;
+}
+
+/* Textarea Button Styles */
+.textarea-buttons{
+  position:absolute;
+  top:8px;
+  right:8px;
+  display:flex;
+  gap:4px;
+}
+.btn.icon-btn{
+  padding:6px 8px;
+  min-width:32px;
+  font-size:14px;
+  background:rgba(34, 197, 94, 0.8);
+  border:1px solid rgba(34, 197, 94, 0.3);
+  backdrop-filter:blur(4px);
+  transition:all 0.2s ease;
+}
+.btn.icon-btn:hover{
+  background:var(--accent);
+  border-color:var(--accent);
+  transform:translateY(-1px);
+  box-shadow:0 4px 8px rgba(34, 197, 94, 0.3);
+}
+.btn.icon-btn:active{
+  transform:translateY(0);
+}
+
+select, input[type="text"], input[type="file"], textarea{
+  width:100%;
+  background:#0b1220;
+  color:var(--text);
+  border:1px solid #1f2937;
+  border-radius:10px;
+  padding:10px 12px;
+  outline:none;
+  user-select:text !important;
+  -webkit-user-select:text !important;
+  -moz-user-select:text !important;
+  -ms-user-select:text !important;
+}
 textarea{min-height:120px;resize:vertical}
-.btn{cursor:pointer;background:var(--accent);border:none;color:#052e13;border-radius:10px;padding:10px 14px;font-weight:700}
+.btn{cursor:pointer;background:var(--accent);border:none;color:#052e13;border-radius:10px;padding:10px 14px;font-weight:700;transition:all 0.2s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 4px 8px rgba(34, 197, 94, 0.2)}
 .btn.secondary{background:#0b1220;color:var(--text);border:1px solid #1f2937}
+.btn.secondary:hover{background:#1f2937;transform:translateY(-1px);box-shadow:0 4px 8px rgba(31, 41, 55, 0.3)}
 .btn.danger{background:var(--danger);color:#fff}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
 .output{white-space:pre-wrap;line-height:1.5}
@@ -24,3 +104,13 @@ textarea{min-height:120px;resize:vertical}
 .notice{margin-top:10px;color:var(--muted);font-size:13px}
 .alert{margin-top:10px;color:#fff;background:#7c2d12;border:1px solid #b45309;padding:8px 10px;border-radius:8px}
 .success{background:#052e13;border-color:#14532d}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px){
+  .container{padding:16px}
+  .row{flex-direction:column}
+  .col{min-width:100%}
+  .header{flex-direction:column;gap:12px;text-align:center}
+  .textarea-buttons{position:static;margin-top:8px;justify-content:center}
+  .textarea-container textarea{padding-right:12px}
+}
